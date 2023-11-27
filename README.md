@@ -1,13 +1,26 @@
-# WebApp boilerplate with React JS and Flask API
+# myDoctor: Fullstack Web Application
 
-Build web applications using React.js for the front end and python/flask for your backend API.
+myDoctor is an online medical consultation​ designed to be a fast, easy, and convenient​ way for users to book appointments to see a doctor via video call​. It was designed by a team of two people as the final project for the 4Geeks Academy coding bootcamp.
 
-- Documentation can be found here: https://start.4geeksacademy.com/starters/react-flask
-- Here is a video on [how to use this template](https://www.loom.com/share/f37c6838b3f1496c95111e515e83dd9b)
-- Integrated with Pipenv for package managing.
-- Fast deployment to heroku [in just a few steps here](https://start.4geeksacademy.com/backend/deploy-heroku-posgres).
-- Use of .env file.
-- SQLAlchemy integration for database abstraction.
+
+​
+![mydoctor](https://github.com/Jide-Muritala/europe-fs-pt11-group4/assets/115728688/a8d35222-dc98-4cdd-8b17-9ab80574a8cd)
+
+The app uses React.js for the frontend and Flask-SQLAlchemy for the backend. It uses PostgreSQL for the database and JSON Web Tokens for user authentication. 
+It has two API integrations, Stripe for payments and newsapi 
+
+
+### 1. Pages:
+- Homepage
+  - About us  
+- Signup/Login
+- User homepage
+  - User dashboard
+  - Consultation booking
+  - Upcoming consultations
+  - Health news channel
+- Consultation payment
+- Payment success/failure
 
 ### 1) Installation:
 
