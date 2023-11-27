@@ -1,30 +1,56 @@
 # myDoctor: Fullstack Web Application
 
-myDoctor is an online medical consultation​ designed to be a fast, easy, and convenient​ way for users to book appointments to see a doctor via video call​. It was designed by a team of two people as the final project for the 4Geeks Academy coding bootcamp.
+myDoctor is an online medical consultation​/telemedicine app designed to be a fast, easy, and convenient​ way for users to book appointments to see a doctor via video call​. It was designed by a team of two people as the final project for the 4Geeks Academy coding bootcamp.
 
+[Click to view the 4Geeks demo-day presentation of the app on YouTube](https://www.youtube.com/embed/96A5468YY5Y?start=2152&end=3049)
 
 ​
 ![mydoctor](https://github.com/Jide-Muritala/europe-fs-pt11-group4/assets/115728688/a8d35222-dc98-4cdd-8b17-9ab80574a8cd)
 
 The app uses React.js for the frontend and Flask-SQLAlchemy for the backend. It uses PostgreSQL for the database and JSON Web Tokens for user authentication. 
-It has two API integrations, Stripe for payments and newsapi 
+It has two API integrations, Stripe for payments and news api for latest news (newsapi.ai) 
 
 
-### 1. Pages:
+### 1. Page Layout
 - Homepage
-  - About us  
-- Signup/Login
+  - About us
+  - Contact
+  - FAQs
+- User authentication
+  - Signup
+  - Login
+  - Forgot password
 - User homepage
   - User dashboard
   - Consultation booking
   - Upcoming consultations
   - Health news channel
-- Consultation payment
-- Payment success/failure
+- Payment
+  - Consultation payment checkout
+  - Stripe checkout page 
+  - Payment success/failure
+- Terms of service
 
-### 1) Installation:
+### 2. Functionalities
+A user can do the following:
+- View doctors and narrow doctor search by doctor specialty
+- Select a doctor​
+- Book​ a consultation
+- Pay​ for a consultation
+- Cancel​ a consultation
+- View upcoming consultations​
+- View health news from the news API
 
-> If you use Github Codespaces (recommended) or Gitpod this template will already come with Python, Node and the Posgres Database installed. If you are working locally make sure to install Python 3.10, Node 
+### 3. Database schema
+
+![final model](https://github.com/Jide-Muritala/europe-fs-pt11-group4/assets/115728688/b469128c-2113-4222-94c6-9e735282969a)
+
+
+
+
+### 4. Installation:
+
+> If you use Github Codespaces (recommended) or Gitpod this template will already come with Python, Node and the Postgres database installed. If you are working locally make sure to install Python 3.10, Node 
 
 It is recomended to install the backend first, make sure you have Python 3.8, Pipenv and a database engine (Posgress recomended)
 
@@ -66,19 +92,9 @@ And you will see the following message:
 
 To update with all yours tables you can edit the file app.py and go to the line 80 to insert the code to populate others tables
 
-### Front-End Manual Installation:
+### Frontend Manual Installation:
 
 -   Make sure you are using node version 14+ and that you have already successfully installed and runned the backend.
 
 1. Install the packages: `$ npm install`
-2. Start coding! start the webpack dev server `$ npm run start`
-
-## Publish your website!
-
-This boilerplate it's 100% read to deploy with Render.com and Heroku in a matter of minutes. Please read the [official documentation about it](https://start.4geeksacademy.com/deploy).
-
-### Contributors
-
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
-
-You can find other templates and resources like this at the [school github page](https://github.com/4geeksacademy/).
+2. Start the webpack dev server `$ npm run start`
