@@ -32,6 +32,8 @@ It has two API integrations, Stripe for payments and news api for latest news (n
 - Terms of service
 
 ### 2. Functionalities
+![Screenshot 2023-11-27 at 7 22 34 PM](https://github.com/Jide-Muritala/europe-fs-pt11-group4/assets/115728688/023498f6-191f-48dd-b73a-1a66459b567d)
+
 A user can do the following:
 - View doctors and narrow doctor search by doctor specialty
 - Select a doctor​
@@ -45,10 +47,44 @@ A user can do the following:
 
 ![final model](https://github.com/Jide-Muritala/europe-fs-pt11-group4/assets/115728688/b469128c-2113-4222-94c6-9e735282969a)
 
+### 4. Tech Stack
+<p align="left">
+<a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="html5" width="40" height="40"/> </a>
+&nbsp;
+<a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="css3" width="40" height="40"/> </a>
+&nbsp;
+<a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://icongr.am/devicon/bootstrap-plain.svg?size=50&color=6d06b1" alt="bootstrap" width="40" height="40"/> </a> 
+&nbsp;
+<a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> 
+&nbsp; 
+<a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> 
+&nbsp;
+<a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> 
+&nbsp;
+<a href="https://flask.palletsprojects.com" target="_blank" rel="noreferrer"> <img src="https://icongr.am/simple/flask.svg?size=40&color=ffffff&colored=false" alt="flask" width="35" height="35"/> </a> 
+&nbsp;
+<a href="https://react.dev/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="react" width="40" height="40"/> </a> 
+&nbsp;
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>   
+&nbsp;
+<a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="postgresql" width="40" height="40"/> </a> 
+&nbsp; 
+<a href="https://jwt.io" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/jwt-3.svg" alt="jwt" width="40" height="40"/> </a>
+&nbsp;
+<a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"> <img src="https://deviconapi.vercel.app/vscode?color=3C99D4ff&size=128" alt="vscode" width="40" height="40"/> </a> 
+&nbsp;
+<a href="https://webpack.js.org" target="_blank" rel="noreferrer"> <img src="https://icongr.am/devicon/webpack-original.svg?size=128&color=currentColor" alt="webpack" width="40" height="40"/> </a>
+&nbsp;
+<a href="https://www.postman.com" target="_blank" rel="noreferrer"> <img src="https://skillicons.dev/icons?i=postman" alt="postman" width="40" height="40"/> </a>
+&nbsp;
+<a href="https://www.npmjs.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="npm" width="40" height="40"/> </a>
+&nbsp; 
+<a href="https://www.sqlalchemy.org" target="_blank" rel="noreferrer"> <img src="https://deviconapi.vercel.app/sqlalchemy?color=ff0000ff&size=128" alt="sqlalchemy" width="40" height="40"/> </a>
+</p>
 
 
 
-### 4. Installation:
+### 5. Installation:
 
 > If you use Github Codespaces (recommended) or Gitpod this template will already come with Python, Node and the Postgres database installed. If you are working locally make sure to install Python 3.10, Node 
 
