@@ -42,6 +42,9 @@ A user can do the following:
 - Cancel​ a consultation
 - View upcoming consultations​
 - View health news from the news API
+  
+![Screenshot 2023-11-27 at 7 33 58 PM](https://github.com/Jide-Muritala/europe-fs-pt11-group4/assets/115728688/fd93ef83-c9f6-4e95-962a-15d5d22f7686)
+
 
 ### 3. Database schema
 
