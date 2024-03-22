@@ -52,7 +52,7 @@ export const Login = () => {
 
 		<div className="container ">
             <br />
-            <div className="w-50 mx-auto border border-primary-subtle p-5">
+            <div className="w-50 mx-auto border border-primary-subtle p-5 rounded">
                 <form>                               
                     <h5 className="fw-normal mb-3 pb-3 text-center" style={{ letterSpacing: "1px" }}>Sign in to myDoctor</h5>
                         <div className="form-outline mb-4">

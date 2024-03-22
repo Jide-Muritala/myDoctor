@@ -74,7 +74,7 @@ const createUser = async (event) => {
 	return (
 	    <div className="container ">
             <br />
-            <div className="w-50 p-3 mx-auto border border-primary-subtle p-5">
+            <div className="w-50 p-3 mx-auto border border-primary-subtle p-5 rounded">
                 <form>
                 <h5 className="fw-normal mb-3 pb-3 text-center" style={{ letterSpacing: "1px" }}>Create your myDoctor account</h5>
                     <div className="d-flex flex-row align-items-center mb-4">
