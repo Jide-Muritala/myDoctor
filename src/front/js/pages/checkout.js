@@ -13,7 +13,7 @@ export const ProductDisplay = () => (
           <div className="col-md-8">
             <div className="card-body">
               <h5 className="card-title booking-header">Appointment with Dr. Susana Lowes</h5>
-              <p className="card-text">Cost: €39.00</p>
+              <p className="card-text">Cost: €73.00</p>
               <form action={process.env.BACKEND_URL+'/api/create-checkout-session'}  method="POST">
                 <button type="submit" className="btn btn-outline-success">
                   Checkout

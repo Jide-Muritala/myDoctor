@@ -141,7 +141,7 @@ def create_checkout_session():
                     'product_data': {
                     'name': 'Appointment with Dr. Susana Lowes',
                     },
-                    'unit_amount': 3900,
+                    'unit_amount': 7300,
                 },
                 'quantity': 1,
                 }],
