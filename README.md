@@ -2,7 +2,7 @@
 
 myDoctor is an online medical consultation​/telemedicine app designed to be a fast, easy, and convenient​ way for users to book appointments to see a doctor via video call​. It was designed by a team of two people as the final project for the 4Geeks Academy coding bootcamp.
 
-[Click to view the 4Geeks demo-day presentation of the app on YouTube](https://www.youtube.com/embed/96A5468YY5Y?start=2152&end=3049)
+[Click to view the presentation of the app on YouTube](https://www.youtube.com/embed/96A5468YY5Y?start=2152&end=3049)
 
 ​
 ![mydoctor](https://github.com/Jide-Muritala/europe-fs-pt11-group4/assets/115728688/a8d35222-dc98-4cdd-8b17-9ab80574a8cd)
