@@ -1,11 +1,39 @@
 # myDoctor: Fullstack Web Application
 
-myDoctor is an online medical consultation​/telemedicine app designed to be a fast, easy, and convenient​ way for users to book appointments to see a doctor via video call​. It was designed by a team of two people as the final project for the 4Geeks Academy coding bootcamp.
+myDoctor is an online medical consultation​/telemedicine app designed to be a fast, easy, and convenient​ way for users to book appointments to see a doctor via video call​. It was built as the final project for the 4Geeks Academy coding bootcamp. The system provides a platform where:
+
+- Patients can register, browse available doctors, and book video consultations
+- Payments are handled securely through Stripe integration
+- Users can access health news via an external news API
+- Appointments can be managed (booking, viewing, and cancellation)
 
 [Click to view the presentation of the app on YouTube](https://www.youtube.com/embed/96A5468YY5Y?start=2152&end=3049)
 
 ​
 ![mydoctor](https://github.com/Jide-Muritala/europe-fs-pt11-group4/assets/115728688/a8d35222-dc98-4cdd-8b17-9ab80574a8cd)
+
+### Key Features
+
+| Feature               | Description                                                  |
+|------------------------|--------------------------------------------------------------|
+| User Authentication    | Secure signup, login, and password recovery system           |
+| Doctor Selection       | Browse doctors with filtering by specialty                   |
+| Appointment Booking    | Schedule consultations with selected doctors                 |
+| Payment Processing     | Secure payment handling via Stripe integration               |
+| Appointment Management | View upcoming consultations and cancel if needed             |
+| Health News            | Access to curated health news via external API               |
+| Medical Reports        | Documentation of consultation outcomes                       |
+
+### System Architecture
+
+![architecture](https://github.com/user-attachments/assets/c9339221-890d-415a-a0a6-ae3506ad35d6)
+
+The application follows a client-server architecture with a clear separation between:
+
+1. Frontend: Built with React.js for a responsive, component-based UI
+2. Backend: Powered by Flask and SQLAlchemy for handling business logic and data access
+3. Database: PostgreSQL for storing user, doctor, and appointment data
+4. External Services: Stripe for payment processing and News API for health content
 
 The app uses React.js for the frontend and Flask-SQLAlchemy for the backend. It uses PostgreSQL for the database and JSON Web Tokens for user authentication. 
 It has two API integrations, Stripe for payments and news api for latest news (newsapi.ai) 
