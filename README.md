@@ -12,7 +12,7 @@ myDoctor is an online medical consultation​/telemedicine app designed to be a 
 ​
 ![mydoctor](https://github.com/Jide-Muritala/europe-fs-pt11-group4/assets/115728688/a8d35222-dc98-4cdd-8b17-9ab80574a8cd)
 
-### Key Features
+## Key Features
 
 | Feature               | Description                                                  |
 |------------------------|--------------------------------------------------------------|
@@ -24,61 +24,62 @@ myDoctor is an online medical consultation​/telemedicine app designed to be a 
 | Health News            | Access to curated health news via external API               |
 | Medical Reports        | Documentation of consultation outcomes                       |
 
-### System Architecture
+## System Architecture
 
-![architecture](https://github.com/user-attachments/assets/c9339221-890d-415a-a0a6-ae3506ad35d6)
+![archi](https://github.com/user-attachments/assets/ce498166-1170-42fa-a0f9-6c55af12aaab)
 
 The application follows a client-server architecture with a clear separation between:
 
 1. Frontend: Built with React.js for a responsive, component-based UI
-2. Backend: Powered by Flask and SQLAlchemy for handling business logic and data access
+2. Backend: Powered by Flask and SQLAlchemy for handling business logic and data access and JSON Web Tokens for user authentication
 3. Database: PostgreSQL for storing user, doctor, and appointment data
 4. External Services: Stripe for payment processing and News API for health content
 
-The app uses React.js for the frontend and Flask-SQLAlchemy for the backend. It uses PostgreSQL for the database and JSON Web Tokens for user authentication. 
-It has two API integrations, Stripe for payments and news api for latest news (newsapi.ai) 
+| Component           | Description                | Implementation                                        |
+|---------------------|----------------------------|-------------------------------------------------------|
+| React Frontend      | User interface components   | React.js with component-based architecture            |
+| Frontend Routing    | Navigation between pages    | React Router with defined routes                      |
+| State Management    | Global state and actions    | Context API with Flux-like pattern                    |
+| Backend API         | RESTful API endpoints       | Flask Blueprint with defined routes                   |
+| Authentication      | User identity verification  | JWT (JSON Web Tokens)                                 |
+| Database            | Data persistence            | PostgreSQL with SQLAlchemy ORM                        |
+| External Services   | Third-party integrations    | Stripe for payments, News API for health content      |
 
-
-### 1. Page Layout
-- Homepage
-  - About us
-  - Contact
-  - FAQs
-- User authentication
-  - Signup
-  - Login
-  - Forgot password
-- User homepage
-  - User dashboard
-  - Consultation booking
-  - Upcoming consultations
-  - Health news channel
-- Payment
-  - Consultation payment checkout
-  - Stripe checkout page 
-  - Payment success/failure
-- Terms of service
-
-### 2. Functionalities
-![Screenshot 2023-11-27 at 7 22 34 PM](https://github.com/Jide-Muritala/europe-fs-pt11-group4/assets/115728688/023498f6-191f-48dd-b73a-1a66459b567d)
-
-A user can do the following:
-- View doctors and narrow doctor search by doctor specialty
-- Select a doctor​
-- Book​ a consultation
-- Pay​ for a consultation
-- Cancel​ a consultation
-- View upcoming consultations​
-- View health news from the news API
-  
-![Screenshot 2023-11-27 at 7 33 58 PM](https://github.com/Jide-Muritala/europe-fs-pt11-group4/assets/115728688/fd93ef83-c9f6-4e95-962a-15d5d22f7686)
-
-
-### 3. Database schema
+## Data Model Schema
 
 ![final model](https://github.com/Jide-Muritala/europe-fs-pt11-group4/assets/115728688/b469128c-2113-4222-94c6-9e735282969a)
 
-### 4. Tech Stack
+This data model allows the system to track:
+
+1. User accounts and authentication
+2. Doctor profiles with specialties and pricing
+3. Scheduled appointments with date/time information
+4. Medical reports containing consultation outcomes and health metrics
+
+## User Flow
+The typical user journey through the myDoctor application follows this process:
+
+![userflow](https://github.com/user-attachments/assets/eb555e95-e847-49f1-8e0c-5b1161137a59)
+
+## API Endpoints
+
+![api](https://github.com/user-attachments/assets/607222c7-3e2b-42fc-955e-b21c2c581bc0)
+
+| Endpoint                         | Method        | Description                      | Authentication |
+|----------------------------------|---------------|----------------------------------|----------------|
+| `/api/hello`                     | GET, POST     | Test endpoint                    | No             |
+| `/api/signup`                    | POST          | Create new user account          | No             |
+| `/api/token`                     | POST          | Authenticate and get JWT token   | No             |
+| `/api/protected`                | GET           | Test JWT authentication          | Yes            |
+| `/api/report`                    | GET           | Get all medical reports          | No             |
+| `/api/report/<id>`              | GET           | Get specific medical report      | No             |
+| `/api/doctors`                   | GET           | List all doctors                 | No             |
+| `/api/booking`                   | POST          | Create new appointment           | No             |
+| `/api/appointments`             | GET           | List all appointments            | No             |
+| `/api/appointments/<id>`        | DELETE        | Delete specific appointment      | No             |
+| `/api/create-checkout-session`  | POST          | Create Stripe checkout session   | No             |
+
+## Tech Stack
 <p align="left">
 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="html5" width="40" height="40"/> </a>
 &nbsp;
@@ -113,9 +114,38 @@ A user can do the following:
 <a href="https://www.sqlalchemy.org" target="_blank" rel="noreferrer"> <img src="https://deviconapi.vercel.app/sqlalchemy?color=ff0000ff&size=128" alt="sqlalchemy" width="40" height="40"/> </a>
 </p>
 
+*Frontend Technologies*
+1. HTML
+2. CSS
+3. JavaScript
+4. React.js: Component-based UI library for building the user interface
+- React Router: Navigation and routing between application pages
+- React Bootstrap: UI component library for consistent styling
+- React Tabs: For the tabbed interface in the user dashboard
+- React DatePicker: For appointment date/time selection
 
+*Backend Technologies*
+1. Flask: Python web framework for the API
+2. SQLAlchemy: ORM for database operations
+3. Flask-JWT-Extended: For user authentication 
+4. Flask-Migrate: For database schema migrations
+5. Stripe API: For payment processing
+6. News API: For health news integration
 
-### 5. Installation:
+*Database*
+1. PostgreSQL: Relational database for persistent data storage
+
+*Development & Deployment*
+1. Webpack: Asset bundling and development server
+2. Gunicorn: WSGI HTTP server for deployment
+3. Python-dotenv: Environment variable management
+
+## Pages
+![Screenshot 2023-11-27 at 7 22 34 PM](https://github.com/Jide-Muritala/europe-fs-pt11-group4/assets/115728688/023498f6-191f-48dd-b73a-1a66459b567d)
+
+![Screenshot 2023-11-27 at 7 33 58 PM](https://github.com/Jide-Muritala/europe-fs-pt11-group4/assets/115728688/fd93ef83-c9f6-4e95-962a-15d5d22f7686)
+
+## Installation:
 
 > If you use Github Codespaces (recommended) or Gitpod this template will already come with Python, Node and the Postgres database installed. If you are working locally make sure to install Python 3.10, Node 
 
