@@ -45,7 +45,7 @@ The application follows a client-server architecture with a clear separation bet
 | Database            | Data persistence            | PostgreSQL with SQLAlchemy ORM                        |
 | External Services   | Third-party integrations    | Stripe for payments, News API for health content      |
 
-## Data Model Schema
+## Database Schema
 
 ![final model](https://github.com/Jide-Muritala/europe-fs-pt11-group4/assets/115728688/b469128c-2113-4222-94c6-9e735282969a)
 
@@ -56,6 +56,10 @@ This data model allows the system to track:
 3. Scheduled appointments with date/time information
 4. Medical reports containing consultation outcomes and health metrics
 
+### Entity Relationship Diagram
+
+![mod](https://github.com/user-attachments/assets/624442bb-f074-4222-98e4-074fa7523124)
+
 ## User Flow
 The typical user journey through the myDoctor application follows this process:
 
@@ -63,7 +67,7 @@ The typical user journey through the myDoctor application follows this process:
 
 ## API Endpoints
 
-![api](https://github.com/user-attachments/assets/607222c7-3e2b-42fc-955e-b21c2c581bc0)
+![api_stx](https://github.com/user-attachments/assets/ec1fdc4f-1bec-42f3-9053-e887a4eb6e1b)
 
 | Endpoint                         | Method        | Description                      | Authentication |
 |----------------------------------|---------------|----------------------------------|----------------|
@@ -195,3 +199,4 @@ To update with all yours tables you can edit the file app.py and go to the line 
 
 1. Install the packages: `$ npm install`
 2. Start the webpack dev server `$ npm run start`
+[.](https://deepwiki.com/Jide-Muritala/myDoctor)
