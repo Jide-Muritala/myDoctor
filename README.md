@@ -1,6 +1,6 @@
 # myDoctor: Fullstack Web Application
 
-myDoctor is an online medical consultation​/telemedicine app designed to be a fast, easy, and convenient​ way for users to book appointments to see a doctor via video call​. It was built as the final project for the 4Geeks Academy coding bootcamp. The system provides a platform where:
+myDoctor is an online medical consultation​/telemedicine app designed to be a fast, easy, and convenient​ way for users to book appointments to see a doctor via video call​. It was built as the final team project for the 4Geeks Academy bootcamp. The system provides a platform where:
 
 - Patients can register, browse available doctors, and book video consultations
 - Payments are handled securely through Stripe integration
